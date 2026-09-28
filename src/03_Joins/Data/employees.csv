@@ -1,0 +1,9 @@
+employee_id,employee_name,department_id,salary,city
+1,Rahul,101,75000,Madanapalle
+2,Karthik,102,55000,Chittoor
+3,Praveen,103,85000,Tirupati
+4,Manoj,104,65000,Kadapa
+5,Harish,101,90000,Pileru
+6,Naveen,105,45000,Rajampet
+7,Sandeep,103,70000,Rayachoti
+8,Arun,104,60000,Madanapalle
