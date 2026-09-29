@@ -1,43 +1,29 @@
 # PySpark Practice
 
-A hands-on PySpark learning project covering file reading, DataFrame transformations, and joins using local PySpark.
+## About This Project
+
+This repository contains my PySpark learning and practice work.
+
+The project focuses on learning Apache Spark with Python (PySpark) and practicing DataFrame operations, transformations, joins, aggregations, window functions, and built-in PySpark functions.
+
+---
 
 ## Project Structure
 
 ```text
-PySpark_practice/
-├── Data/
-│   ├── departments.csv
-│   └── employees.csv
+PySpark
 │
-├── src/
-│   ├── 01_Reading_files/
-│   │   ├── 01_read_csv.py
-│   │   ├── 02_read_json.py
-│   │   ├── 03_read_parquet.py
-│   │   └── 04_read_delta.py
-│   │
-│   ├── 02_Basic_Transformations/
-│   │   ├── 01_select.py
-│   │   ├── 02_filter.py
-│   │   ├── 03_where.py
-│   │   ├── 04_withcolumn.py
-│   │   ├── 05_when_otherwise.py
-│   │   ├── 06_column_expressions.py
-│   │   └── 07_aliases.py
-│   │
-│   └── 03_Joins/
-│       ├── 01_inner_join.py
-│       ├── 02_left_join.py
-│       ├── 03_outer_join.py
-│       ├── 04_semi_join.py
-│       ├── 05_anti_join.py
-│       ├── 06_join_condition.py
-│       ├── 07_duplicate_columns.py
-│       └── 08_null_values_in_joins.py
+├── src
+│   ├── 00_Spark_basics
+│   ├── 01_Reading_files
+│   ├── 02_Basic_Transformations
+│   ├── 03_Joins
+│   ├── 04_Aggregations
+│   ├── 05_Window_Functions
+│   ├── 06_Advanced_Functions
+│   └── Data
 │
 └── README.md
-
 
 ## About This Project
 
