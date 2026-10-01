@@ -1,86 +1,22 @@
-# PySpark Practice
+PySpark Practice Repository
 
-## About This Project
+A comprehensive collection of PySpark scripts designed to help data engineers, data scientists, and developers learn and practice PySpark concepts—ranging from basic DataFrame operations to advanced Data Lakehouse implementations (Medallion Architecture, SCD Types, Window Functions, and Pandas API on Spark).
 
-This repository contains my PySpark learning and practice work.
-
-The project focuses on learning Apache Spark with Python (PySpark) and practicing DataFrame operations, transformations, joins, aggregations, window functions, and built-in PySpark functions.
-
----
-
-## Project Structure
-
-```text
-PySpark
-│
-├── src
-│   ├── 00_Spark_basics
-│   ├── 01_Reading_files
-│   ├── 02_Basic_Transformations
-│   ├── 03_Joins
-│   ├── 04_Aggregations
-│   ├── 05_Window_Functions
-│   ├── 06_Advanced_Functions
-│   └── Data
-│
-└── README.md
-
-## About This Project
-
-This repository contains my hands-on practice and learning journey with **PySpark** and **Apache Spark**.
-
-The main objective of this project is to understand how PySpark is used for processing and transforming data using DataFrames. The project covers file reading, DataFrame transformations, conditional operations, and different types of joins.
-
-I have organized each concept into separate Python files so that every topic can be practiced and understood independently.
-
-## Project Objectives
-
-- Understand the fundamentals of PySpark and Spark DataFrames.
-- Practice reading different data formats.
-- Perform DataFrame transformations and filtering.
-- Create derived columns using PySpark functions.
-- Apply conditional logic using `when()` and `otherwise()`.
-- Understand and implement different types of joins.
-- Handle duplicate columns after joins.
-- Understand NULL values in joined DataFrames.
-- Practice writing clean and reusable PySpark code.
-- Maintain the learning work using Git and GitHub.
-
-## What I Learned
-
-Through this project, I practiced:
-
-- Reading CSV, JSON, Parquet, and Delta files.
-- Working with Spark DataFrames.
-- Selecting and filtering data.
-- Creating new columns using `withColumn()`.
-- Applying conditional logic.
-- Using column expressions and aliases.
-- Performing Inner, Left, Full Outer, Semi, and Anti joins.
-- Defining explicit join conditions.
-- Handling duplicate columns.
-- Handling NULL values.
-- Running PySpark programs locally using `local[*]`.
-
-## Data Used
-
-The project uses sample employee and department datasets.
-
-The `employees.csv` file contains:
-
-- Employee ID
-- Employee Name
-- Department ID
-- Salary
-- City
-
-The `departments.csv` file contains:
-
-- Department ID
-- Department Name
-
-The common key between the two datasets is:
-
-```text
-department_id
-
+Repository Structure
+PySpark_practice/
+└── src/
+    ├── 00_spark_basics/            # SparkSession creation, DataFrame initialization, schemas
+    ├── 01_reading_files/           # Reading CSV, JSON, Parquet, Delta
+    ├── 01_writing_files/           # Writing CSV, JSON, Parquet, Delta
+    ├── 02_basic_transformations/   # select, filter, where, withColumn, when/otherwise, aliases
+    ├── 03_joins/                   # Inner, Left, Outer, Semi, Anti joins, duplicate handling
+    ├── 04_aggregations/            # groupBy, sum, avg, count, min/max, multiple aggregations
+    ├── 05_window_functions/        # row_number, rank, dense_rank, lag, lead, running totals
+    ├── 06_advanced_functions/      # String, numeric, date-time, and array functions
+    ├── 07_nested_data/             # Arrays, Structs, explode, from_json, nested JSON parsing
+    ├── 08_udf/                     # Python UDFs, multi-column UDFs, UDFs vs built-in functions
+    ├── 09_scd/                     # Slowly Changing Dimensions (Type 1, Type 2, Type 3)
+    ├── 10_built_in_functions/      # limit, drop, distinct, dropDuplicates, fillna, union, pivot
+    ├── 11_applyinpandas/           # PySpark applyInPandas execution
+    ├── 12_medallion_architeture/   # Medallion Architecture (Bronze, Silver, Gold layers)
+    └── data/                       # Sample datasets (employees.csv, departments.csv)
