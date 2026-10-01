@@ -3,6 +3,7 @@ PySpark Practice Repository
 A comprehensive collection of PySpark scripts designed to help data engineers, data scientists, and developers learn and practice PySpark concepts—ranging from basic DataFrame operations to advanced Data Lakehouse implementations (Medallion Architecture, SCD Types, Window Functions, and Pandas API on Spark).
 
 Repository Structure
+
 PySpark_practice/
 └── src/
     ├── 00_spark_basics/            # SparkSession creation, DataFrame initialization, schemas
